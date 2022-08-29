@@ -1,7 +1,7 @@
 # soyut sınıflar nesne üretemez. Şablon sınıf olarak nitelendirilir.
-# Unutma sınıfar hafızada yer tutmuyordu. Ama referans oluşturulduğu zaman yer tutarlar.
+# Sınıfar hafızada yer tutmaz. Ama referans oluşturulduğu zaman yer tutarlar.
 # Abstract sınıfların nesnesi oluşturulmadığı için hiçbir zaman hafızada yer tutmazlar
-# Getter setter fonksiyonlarını yazdığın zaman artık başka yerden ulaşmak istersen
+# Getter setter fonksiyonları oluiturulduğu zaman artık başka yerden ulaşmak istersek
 # GETTER FONKSİYONUN İSMİYLE ULAŞABİLİRSİN HER YERDEN
 from abc import ABC, abstractmethod  # abc kütüphanesinden ABC ve abstract metodu import edilir.
 
