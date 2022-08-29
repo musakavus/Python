@@ -1,21 +1,13 @@
 # soyut sınıflar nesne üretemez. Şablon sınıf olarak nitelendirilir.
 # Sınıfar hafızada yer tutmaz. Ama referans oluşturulduğu zaman yer tutarlar.
 # Abstract sınıfların nesnesi oluşturulmadığı için hiçbir zaman hafızada yer tutmazlar
-# Getter setter fonksiyonları oluiturulduğu zaman artık başka yerden ulaşmak istersek
-# GETTER FONKSİYONUN İSMİYLE ULAŞABİLİRSİN HER YERDEN
-# private bir metodu abstract class içerisinde kullanmak yanlış olur. Ya public yada protected
+# Getter setter fonksiyonları olusturulduğu zaman değerine ulaşmak istersek getter fonksiyon ismini kullanmalıyız
+# private bir metodu abstract class içerisinde kullanamazsın.Ya public yada protected
+# Abstract classlar en az bir tane abstract metod almak zorundadır.
 from abc import ABC, abstractmethod  # abc kütüphanesinden ABC ve abstract metodu import edilir.
 
 
 class Coin(ABC):
-
-    @abstractmethod
-    def __info(self):
-        pass
-
-    @abstractmethod
-    def __user_info(self):
-        pass
 
     @abstractmethod
     def add_list(self):
@@ -77,7 +69,7 @@ class User(Coin):
         return list
 
 
-class CoinList(Coin):
+class CoinList:
 
     def __init__(self, coin_id, name, value):
         self.__coin_id = coin_id
