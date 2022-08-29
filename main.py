@@ -12,7 +12,6 @@ class Coin(ABC):
     def __info(self):
         pass
 
-
     @abstractmethod
     def __user_info(self):
         pass
@@ -128,4 +127,3 @@ k = u1.user_info
 print(k)
 u1.add_list()
 print(u1.user_list)
-
