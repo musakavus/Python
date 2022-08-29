@@ -4,6 +4,7 @@
 # Getter setter fonksiyonları olusturulduğu zaman değerine ulaşmak istersek getter fonksiyon ismini kullanmalıyız
 # private bir metodu abstract class içerisinde kullanamazsın.Ya public yada protected
 # Abstract classlar en az bir tane abstract metod almak zorundadır.
+# Abstract metodu miras alan sınıf abstract classtaki metodların hepsini almak sorundadır.
 from abc import ABC, abstractmethod  # abc kütüphanesinden ABC ve abstract metodu import edilir.
 
 
