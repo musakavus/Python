@@ -3,6 +3,7 @@
 # Abstract sınıfların nesnesi oluşturulmadığı için hiçbir zaman hafızada yer tutmazlar
 # Getter setter fonksiyonları oluiturulduğu zaman artık başka yerden ulaşmak istersek
 # GETTER FONKSİYONUN İSMİYLE ULAŞABİLİRSİN HER YERDEN
+# private bir metodu abstract class içerisinde kullanmak yanlış olur. Ya public yada protected
 from abc import ABC, abstractmethod  # abc kütüphanesinden ABC ve abstract metodu import edilir.
 
 
@@ -14,6 +15,10 @@ class Coin(ABC):
 
     @abstractmethod
     def __user_info(self):
+        pass
+
+    @abstractmethod
+    def add_list(self):
         pass
 
 
