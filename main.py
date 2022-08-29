@@ -12,6 +12,7 @@ class Coin(ABC):
     def __info(self):
         pass
 
+
     @abstractmethod
     def __user_info(self):
         pass
