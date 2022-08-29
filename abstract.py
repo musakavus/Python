@@ -5,6 +5,8 @@
 # private bir metodu abstract class içerisinde kullanamazsın.Ya public yada protected
 # Abstract classlar en az bir tane abstract metod almak zorundadır.
 # Abstract metodu miras alan sınıf abstract classtaki metodların hepsini almak sorundadır.
+# abstract sınıf içerisinde abstract metodla tanımlanan her metod miras alan sınıfta kullanılmalıdır.
+
 from abc import ABC, abstractmethod  # abc kütüphanesinden ABC ve abstract metodu import edilir.
 
 
@@ -12,6 +14,11 @@ class Coin(ABC):
 
     @abstractmethod
     def add_list(self):
+        pass
+
+    def info(self):  # abstract metodlarda kendine özgü metodlara sahip olabilir. Ama !!!!
+        # bu durumda @abstractmetod ibaresi kullanılmamalıdır. abstractmetod sadece miras verilen
+        # metodları tanımlar
         pass
 
 
